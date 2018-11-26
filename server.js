@@ -2,7 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
-const portNumber = 3000;
+// SERVER PORT NUMBER FROM HEROKU OR LOCAL
+const portNumber = process.env.PORT || 3000;
 
 var app = express();
 
